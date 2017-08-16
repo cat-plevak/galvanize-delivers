@@ -1,0 +1,68 @@
+
+body {
+  margin: 3%;
+}
+
+.large-footer {
+
+}
+
+/*order form*/
+
+.menu {
+  width:50%;
+}
+
+main {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-header {
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.thumbnails {
+  display:flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 1% 1% 1% 0%;
+}
+
+.card {
+  margin: 1% 1% 1% 0%;
+}
+
+
+
+.column2 {
+  margin-top: 2%;
+  width:45%;
+}
+
+.list-group {
+  margin-bottom: 3%;
+}
+
+
+
+/*FORMATTIN' BASKET TABLE*/
+.list-group-item {
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+.span-item {
+  width: 80%;
+}
+
+.span-price {
+  width:20%;
+}
+
+.span-subtotal, .span-tax, .span-total {
+
+}
