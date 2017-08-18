@@ -1,20 +1,62 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/*general*/
 body {
-  margin: 3%;
+  font-family: 'Abel', sans-serif;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Cabin Sketch', cursive
 }
 
-.large-footer {
-
+#container {
+  background-color: rgba(250, 242, 216, 0.2);
 }
+
+
+
+/*navbar*/
+.navbar {
+  font-size: 1.5em;
+  background-color: rgba(213, 108, 0, 0.7);
+}
+
+.name {
+  font-size: 2em;
+  font-family: 'Poiret One', cursive;
+}
+
+/*nav links*/
+a:link {
+  color: rgba(250, 242, 216, 1);
+}
+
+a:visited {
+  color: rgba(250, 242, 216, 1);
+}
+
+a:hover {
+  color: rgba(250, 242, 216, 1);
+}
+
+a:active {
+  color: rgba(250, 242, 216, 1);
+}
+
+
+
 
 /*order form*/
 
 .menu {
-  width:50%;
+  width: 50%;
 }
 
 main {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -24,8 +66,43 @@ main {
   margin-bottom: 0%;
 }
 
+
+
+
+/*button design*/
+.btn {
+  background-color: rgba(195, 215, 138, 0.6);
+  border: none;
+  outline: none;
+}
+
+
+
+.card a:link {
+  color:rgba(213, 108, 0, 0.8);
+}
+.card a:visited {
+  color:rgba(213, 108, 0, 0.8);
+}
+.card a:hover {
+  color:rgba(213, 108, 0, 0.8);
+  background-color: rgba(195, 215, 138, 0.3);
+}
+.card a:active {
+  color:rgba(213, 108, 0, 0.8);
+}
+/*end of button design*/
+
+
+
+/*card formatting*/
+
+.card {
+  border:none;
+}
+
 .thumbnails {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   width: 50%;
   margin: 1% 1% 1% 0%;
@@ -35,11 +112,9 @@ main {
   margin: 1% 1% 1% 0%;
 }
 
-
-
 .column2 {
   margin-top: 2%;
-  width:45%;
+  width: 45%;
 }
 
 .list-group {
@@ -47,9 +122,10 @@ main {
 }
 
 
-
 /*FORMATTIN' BASKET TABLE*/
-.list-group-item {
+
+
+/*.list-group-item {
   display:flex;
   flex-wrap: wrap;
 
@@ -61,8 +137,48 @@ main {
 
 .span-price {
   width:20%;
-}
+}*/
 
-.span-subtotal, .span-tax, .span-total {
 
+/*TABLE MEDIA QUERY*/
+
+@media screen and (max-width: 600px) {
+  table#cart tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
+  .actions .btn {
+    width: 36%;
+    margin: 1.5em 0;
+  }
+  .actions .btn-info {
+    float: left;
+  }
+  .actions .btn-danger {
+    float: right;
+  }
+  table#cart thead {
+    display: none;
+  }
+  table#cart tbody td {
+    display: block;
+    padding: .6rem;
+    min-width: 320px;
+  }
+  table#cart tbody tr td:first-child {
+    background: #333;
+    color: #fff;
+  }
+  table#cart tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+  }
+  table#cart tfoot td {
+    display: block;
+  }
+  table#cart tfoot td .btn {
+    display: block;
+  }
 }

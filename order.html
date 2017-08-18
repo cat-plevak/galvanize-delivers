@@ -1,125 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>nomnomnom</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css"
-  </head>
 
-  <body>
+<head>
+  <title>nomnomnom</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+  </script>
 
-    <!-- NAV -->
-    <nav class="navbar fixed navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Cabin+Sketch|Poiret+One|Sacramento" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div id='container'>
+
+  <!-- NAV -->
+  <nav class="navbar fixed navbar-expand-lg" style='padding:2%'>
+    <a class="navbar-brand name" href="index.html">Burgers and Stuff</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main class="container-fluid">
+
+    <!-- added class of "orderx" to cards -->
+    <div class='thumbnails'>
+      <h2 class='menu-header'>menu</h2>
+
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">food 1</h4>
+          <div class="price">$17</div>
+          <a href="#" class="btn btn-primary order1">add to basket</a>
+        </div>
       </div>
-    </nav>
 
-    <!-- main -->
-    <main class = "container-fluid">
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="img/ice_cream.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">food 2</h4>
+          <div class="price">$1.99</div>
+          <a href="#" class="btn btn-primary order2">add to basket</a>
+        </div>
+      </div>
 
-      <div class='thumbnails'>
-        <h2 class = 'menu-header'>menu</h2>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">xx-small puppy</h4>
-            <p class="card-text">price: 17 high-fives</p>
-            <a href="#" class="btn btn-primary">add to basket</a>
-          </div>
+
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="img/ribs.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title card3">food 3</h4>
+          <div class="price">$10.99</div>
+          <a href="#" class="btn btn-primary order3" data-value="10.99">add to basket</a>
         </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">x-small puppy</h4>
-            <p class="card-text">price: 3 hugs</p>
-            <a href="#" class="btn btn-primary">add to basket</a>
-          </div>
+      </div>
+
+
+
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">food 4</h4>
+          <div class="price">$8</div>
+          <a href="#" class="btn btn-primary order4">add to basket</a>
         </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">smol puppy</h4>
-            <p class="card-text">price: 80 hugs</p>
-            <a href="#" class="btn btn-primary">add to basket</a>
-          </div>
-        </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">gigantor puppy<small> (genetically modified)</small></h4>
-            <p class="card-text">price: 408</p>
-            <a href="#" class="btn btn-primary">add to basket</a>
-          </div>
-        </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">medium-ish puppy</h4>
-            <p class="card-text">price: negotiable</p>
-            <a href="#" class="btn btn-primary">add to basket</a>
-          </div>
-        </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">grande perro <small>(big ol' dog)</small></h4>
-            <p class="card-text">price: 12 chicken nuggets</p>
-            <a href="#" class="btn btn-primary">add to basket</a>
-          </div>
-        </div>
+      </div>
 
 
 
 
       <!-- end of thumbnails -->
-      </div>
+    </div>
 
 
-      <!-- basket -->
-    <div class = 'column2'>
+    <!-- basket -->
+    <div class='column2'>
       <h2>basket</h2>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="span-item">item</span>
-          <span class="span-price">price</span>
-        </li>
-        <li class="list-group-item item">
-          <span class="span-subtotal">subtotal</span>
-          <span class="span-price"></span>
-        </li>
-        <li class="list-group-item item">
-          <span class="span-tax">tax</span>
-          <span class="span-price"></span>
-        </li>
-        <li class="list-group-item item">
-          <span class="span-total">total</span>
-          <span class="span-price"></span>
-        </li>
-      </ul>
-
-
+      <div class="container">
+        <table id="orders" class="table table-hover table-condensed">
+          <thead>
+            <tr>
+              <td style="width:50%">Product</td>
+              <td style="width:10%">Price</td>
+              <td style="width:10%">Quantity</td>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Sub-Total:<div id="subtotal"></div></td>
+          </tfoot>
+        </table>
+        <!-- end of basket -->
+      </div>
 
 
       <!-- address form -->
@@ -173,21 +174,38 @@
     </div>
 
     <!-- end of main -->
-    </main>
+  </main>
 
 
-    <!-- footer -->
-    <footer class = "container-fluid">
+  <!-- footer -->
+  <footer class="container-fluid">
     <!-- end of footer -->
-    </footer class = "container-fluid">
+  </footer class="container-fluid">
+
+  <!-- END OF CONTAINER -->
+</div>
 
 
 
+  <script src="js/shopping-cart.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  </body>
+  <!-- // var total = 0;
+      // $('.card').click(function() {
+      //   total += $(this).data('value');
+      //   var name = $('.card3').text();
+      //   $('total').text('total' + total)
+      //
+      //   $('table#cart, tbody').append('<tr><td>' + name + '</td><td>' + total + '</td></tr>');
+      // }) -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
 </html>
