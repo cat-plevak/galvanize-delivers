@@ -22,12 +22,16 @@ body {
 .navbar {
   font-size: 1.5em;
   background-color: rgba(213, 108, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .name {
   font-size: 2em;
   font-family: 'Poiret One', cursive;
 }
+
 
 /*nav links*/
 a:link {
@@ -39,7 +43,7 @@ a:visited {
 }
 
 a:hover {
-  color: rgba(250, 242, 216, 1);
+  color: rgba(195, 215, 138, 0.6);
 }
 
 a:active {
@@ -58,12 +62,20 @@ a:active {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .menu-header {
   width: 100%;
   margin-bottom: 0%;
+  margin-top: 2%;
+}
+
+
+
+/*billing form*/
+.form {
+  padding-bottom: 5%;
 }
 
 
@@ -85,7 +97,7 @@ main {
   color:rgba(213, 108, 0, 0.8);
 }
 .card a:hover {
-  color:rgba(213, 108, 0, 0.8);
+  color:rgba(213, 108, 0, 1);
   background-color: rgba(195, 215, 138, 0.3);
 }
 .card a:active {
@@ -104,7 +116,7 @@ main {
 .thumbnails {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 54%;
   margin: 1% 1% 1% 0%;
 }
 
@@ -115,6 +127,8 @@ main {
 .column2 {
   margin-top: 2%;
   width: 45%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .list-group {

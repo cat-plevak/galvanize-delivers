@@ -21,7 +21,7 @@ $(document).ready(() => {
   //remove from cart
   $('#orders').click('.remove', (event) => {
     let title = $(event.target).data("title")
-    console.log("title in remove", title)
+    // console.log("title in remove", title)
     removeFromCart(title)
   })
 
