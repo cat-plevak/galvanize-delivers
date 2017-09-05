@@ -131,33 +131,37 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4" class="col-form-label">name</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input class="form-control" id="inputEmail4" placeholder="name" required>
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword4" class="col-form-label">card number</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            <input type="password" class="form-control" id="inputPassword4" placeholder="card number" required>
           </div>
         </div>
         <div class="form-group">
           <label for="inputAddress" class="col-form-label">address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
         </div>
         <div class="form-group">
           <label for="inputAddress2" class="col-form-label">address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity" class="col-form-label">city</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" required>
           </div>
           <div class="form-group col-md-4">
             <label for="inputState" class="col-form-label">state</label>
-            <select id="inputState" class="form-control">choose</select>
+            <select id="inputState" class="form-control" required>
+              <option value="Kansas">Kansas</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="sorry">Other places</option>
+            </select>
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip" class="col-form-label">zip</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" required>
           </div>
         </div>
         <div class="form-group">
@@ -169,11 +173,16 @@
         </div>
         <div class="form-group">
           <label for="inputDelivery" class="col-form-label">delivery method</label>
-          <select id="inputDelivery" class="form-control">choose</select>
+          <select id="inputDelivery" class="form-control">
+            <option value="pidgeon">carrier pidgeon (3-5 days)</option>
+            <option value="shia">angry shia lebeouf</option>
+          </select>
         </div>
         <button type="submit" class="btn btn-primary">place order</button>
       </form>
     </div>
+
+
 
     <!-- end of main -->
   </main>

@@ -90,7 +90,7 @@ $(document).ready(() => {
     }
 
 
-    // do calculate
+    // do calculation
     console.log("subtotal", subtotal)
     $('#subtotal').text(formatPrice(subtotal))
   }
