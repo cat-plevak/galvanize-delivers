@@ -104,5 +104,11 @@ $(document).ready(() => {
     return '$' + price.toFixed(2)
   }
 
+  $("#myModal").modal("hide");
+
+  $("#myBtn").click(function() {
+    $("#myModal").modal("show");
+  });
+
 
 })
